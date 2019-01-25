@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # Show External Links
 Tags: links, external
+=======
+# WordPress Plugin Show External Links
+>>>>>>> bdbe5c20c3453f930ba88cf7e4fd8b44dd1b4558
 
 Requires at least: 4.8
 
