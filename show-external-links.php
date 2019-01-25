@@ -1,19 +1,18 @@
 <?php
 
 /**
- * The plugin bootstrap file
+ * Show External Links
  *
  * @link              https://web-svb.github.io/sel.github.io
- * @since             1.0.0
+ * @since             1.0.1
  * @package           Show_External_Links
  *
  * @wordpress-plugin
  * Plugin Name:       Show External Links
  * Plugin URI:        https://web-svb.github.io/sel.github.io
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            webaction <web.dev.svb@gmail.com>
- * Author URI:        https://web-svb.github.io/sel.github.io
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       show-external-links
@@ -28,7 +27,7 @@ if ( !defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'PLUGIN_NAME_VERSION', '1.0.0' );
+define( 'PLUGIN_NAME_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
@@ -64,7 +63,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-show-external-links.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    1.0.1
  */
 function run_show_external_links () {
     $plugin = new Show_External_Links();

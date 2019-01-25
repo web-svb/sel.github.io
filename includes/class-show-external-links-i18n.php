@@ -6,7 +6,7 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @since      1.0.0
+ * @since      1.0.1
  * @package    Show_External_Links
  * @subpackage Show_External_Links/includes
  * @author     webaction <web.dev.svb@gmail.com>
@@ -17,7 +17,7 @@ class Show_External_Links_i18n
     /**
      * Load the plugin text domain for translation.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      */
     public function load_plugin_textdomain () {
 

@@ -4,7 +4,7 @@
  * Used to mark up the form in the admin panel of the plugin
  *
  * @link       https://web-svb.github.io/sel.github.io
- * @since      1.0.0
+ * @since      1.0.1
  *
  * @package    Show_External_Links
  * @subpackage Show_External_Links/admin/partials

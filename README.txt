@@ -5,7 +5,7 @@ Tags: links, external
 Requires at least: 4.8
 Tested up to: 5.0
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,5 +48,10 @@ Download the Show External Links plugin and uploading it to your server via your
 3. Found links on the page
 
 == Changelog ==
+
+= 1.0.1 (2019-01-25) =
+
+- Fixed plugin styles
+- Added support for multisite
 
 == Upgrade Notice ==

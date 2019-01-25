@@ -2,7 +2,7 @@
 /**
  * Class of search and selection of external links
  *
- * @since      1.0.0
+ * @since      1.0.1
  * @package    Show_External_Links
  * @subpackage Show_External_Links/includes
  * @author     webaction <web.dev.svb@gmail.com>
@@ -27,7 +27,7 @@ class Show_External_Links_Search_And_Highlight
     /**
      * Retrieving the page's HTML code and passing it to the show_external_links method.
      *
-     * @since 1.0.0
+     * @since 1.0.1
      */
     public function get_html () {
         if ( current_user_can( 'activate_plugins' ) ) {
@@ -41,7 +41,7 @@ class Show_External_Links_Search_And_Highlight
      * @param $html
      *
      * @return null|string|string[]
-     * @since 1.0.0
+     * @since 1.0.1
      */
     public function external_links_highlight ( $html ) {
         $html = str_replace( [ "\t", "\n", "\r" ], '', $html );
@@ -67,12 +67,13 @@ class Show_External_Links_Search_And_Highlight
     /**
      * Site that are not considered when working with external links
      *
-     * @since 1.0.0
+     * @since 1.0.1
      * @return string
      */
     private function get_skip_sites () {
 
-        $sel_skip_sites = get_option( 'sel_skip_sites' );
+        $sel_skip_sites = ( is_multisite() ) ? get_site_option( 'sel_skip_sites' ) : get_option( 'sel_skip_sites' );
+
         if ( false !== $sel_skip_sites && !empty( $sel_skip_sites ) ) {
             return $this->domain . '|' . str_ireplace( [ ',', ' ' ], [ '|', '' ], $sel_skip_sites );
         } else {
@@ -86,7 +87,7 @@ class Show_External_Links_Search_And_Highlight
      * @param $number_of_links
      * @param $list_of_links
      *
-     * @since 1.0.0
+     * @since 1.0.1
      * @return bool
      */
     private function get_popup ( $number_of_links, $list_of_links ) {

@@ -3,7 +3,7 @@
 /**
  * The core plugin class.
  *
- * @since      1.0.0
+ * @since      1.0.1
  * @package    Show_External_Links
  * @subpackage Show_External_Links/includes
  * @author     webaction <web.dev.svb@gmail.com>
@@ -15,7 +15,7 @@ class Show_External_Links
      * The loader that's responsible for maintaining and registering all hooks that power
      * the plugin.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   protected
      * @var      Show_External_Links_Loader $loader Maintains and registers all hooks for the plugin.
      */
@@ -24,7 +24,7 @@ class Show_External_Links
     /**
      * The unique identifier of this plugin.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   protected
      * @var      string $plugin_name The string used to uniquely identify this plugin.
      */
@@ -33,7 +33,7 @@ class Show_External_Links
     /**
      * The current version of the plugin.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   protected
      * @var      string $version The current version of the plugin.
      */
@@ -42,13 +42,13 @@ class Show_External_Links
     /**
      * Define the core functionality of the plugin.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      */
     public function __construct () {
         if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
             $this->version = PLUGIN_NAME_VERSION;
         } else {
-            $this->version = '1.0.0';
+            $this->version = '1.0.1';
         }
         $this->plugin_name = 'show-external-links';
 
@@ -73,7 +73,7 @@ class Show_External_Links
      * Create an instance of the loader which will be used to register the hooks
      * with WordPress.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   private
      */
     private function load_dependencies () {
@@ -121,7 +121,7 @@ class Show_External_Links
      * Uses the Show_External_Links_i18n class in order to set the domain and to register the hook
      * with WordPress.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   private
      */
     private function set_locale () {
@@ -136,7 +136,7 @@ class Show_External_Links
      * Register all of the hooks related to the admin area functionality
      * of the plugin.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   private
      */
     private function define_admin_hooks () {
@@ -154,7 +154,7 @@ class Show_External_Links
      * Register all of the hooks related to the public-facing functionality
      * of the plugin.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   private
      */
     private function define_public_hooks () {
@@ -169,7 +169,7 @@ class Show_External_Links
     /**
      * Search and selection of external links.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   private
      */
     private function search_links () {
@@ -181,7 +181,7 @@ class Show_External_Links
     /**
      * Adds a top-level item (page) to the admin panel menu.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      * @access   private
      */
     private function add_menu () {
@@ -192,7 +192,7 @@ class Show_External_Links
     /**
      * Run the loader to execute all of the hooks with WordPress.
      *
-     * @since    1.0.0
+     * @since    1.0.1
      */
     public function run () {
         $this->loader->run();
@@ -202,7 +202,7 @@ class Show_External_Links
      * The name of the plugin used to uniquely identify it within the context of
      * WordPress and to define internationalization functionality.
      *
-     * @since     1.0.0
+     * @since     1.0.1
      * @return    string    The name of the plugin.
      */
     public function get_plugin_name () {
@@ -212,7 +212,7 @@ class Show_External_Links
     /**
      * The reference to the class that orchestrates the hooks with the plugin.
      *
-     * @since     1.0.0
+     * @since     1.0.1
      * @return    Show_External_Links_Loader    Orchestrates the hooks of the plugin.
      */
     public function get_loader () {
@@ -222,7 +222,7 @@ class Show_External_Links
     /**
      * Retrieve the version number of the plugin.
      *
-     * @since     1.0.0
+     * @since     1.0.1
      * @return    string    The version number of the plugin.
      */
     public function get_version () {

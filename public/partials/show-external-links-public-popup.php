@@ -5,13 +5,13 @@
  *
  *
  * @link       https://web-svb.github.io/sel.github.io
- * @since      1.0.0
+ * @since      1.0.1
  *
  * @package    Show_External_Links
  * @subpackage Show_External_Links/public/partials
  */
 
-$sel_skip_sites = get_option( 'sel_skip_sites' );
+$sel_skip_sites = is_multisite() ? get_site_option( 'sel_skip_sites' ) : get_option( 'sel_skip_sites' );
 $note           = ( false === $sel_skip_sites || empty( $sel_skip_sites ) ) ? '' : '<br /><span class="sel-note">(' . __( 'except for excluded sites', 'show-external-links' ) . ')</span>';
 
 $popup = '
