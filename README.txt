@@ -17,6 +17,7 @@ With the plugin Show External Links easy to find all the external links on the p
 You can see the info window with the total number of links on the current page. Also, all links stand out and become visible.
 If you do not see all the links on the page, check the source code. Perhaps, they are hidden.
 >The plugin works only for authorized users with administrative rights.
+The plugin does not take into account the WordPress admin bar and the links specified in the skip-sites field.
 
 [Follow plugin development on Github.](https://web-svb.github.io/sel.github.io)
 
@@ -53,5 +54,6 @@ Download the Show External Links plugin and uploading it to your server via your
 
 - Fixed plugin styles
 - Added support for multisite
+- Links of the admin bar Wordpress are excluded.
 
 == Upgrade Notice ==

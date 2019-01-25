@@ -21,7 +21,10 @@ class Show_External_Links_Search_And_Highlight
 
         $this->get_skip_sites();
 
-        $this->links_pattern = '/(<a[^>]+((https?:\/\/|www)(?!(' . addslashes( $this->get_skip_sites() ) . '))[\w\.\/\-=?#]+)[^>]+>)(.*?)<\/a>/ui';
+        // In this pattern, WordPress admin bar links and links specified in the skip-sites field
+        // are excluded.
+        $this->links_pattern = '/(<a(?![^>]+class=\"ab-item\")[^>]+((https?:\/\/|www)(?!(' .
+            addslashes( $this->get_skip_sites() ) . '))[\w\.\/\-=?#]+)[^>]+>)(.*?)<\/a>/ui';
     }
 
     /**
