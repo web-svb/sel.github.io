@@ -1,5 +1,4 @@
-# sel.github.io
-WordPress Plugin **Show External Links**
+# WordPress Plugin Show External Links
 
 Requires at least: 4.8
 
