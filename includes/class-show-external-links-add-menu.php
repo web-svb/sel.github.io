@@ -11,7 +11,7 @@
 class Show_External_Links_Add_Menu
 {
     public function plugin_menu () {
-        add_menu_page( 'Search External Links', 'SELinks', 8, __FILE__, [ $this, 'get_form' ] );
+        add_menu_page( 'Search External Links', 'SELinks', 'activate_plugins', __FILE__, [ $this, 'get_form' ] );
 
         $this->set_options();
     }
