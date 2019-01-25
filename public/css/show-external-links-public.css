@@ -1,0 +1,198 @@
+@import "compass/css3";
+
+.external-links {
+    display: block;
+    min-width: 50px;
+    min-height: 30px;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: -1px;
+    color: white;
+    -webkit-border-radius: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #5a99d4;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, .5);
+    -webkit-animation: pulse 1.5s infinite;
+    padding: .3em;
+}
+
+.external-links:hover {
+    -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+    @include transform(scale(.9));
+    }
+    70% {
+    @include transform(scale(1));
+        box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+    }
+    100% {
+    @include transform(scale(.9));
+        box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+    }
+}
+
+.sel-note {
+    font-size: .8em;
+    font-style: italic;
+}
+
+/* Tooltips */
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    max-width: 300px;
+    left: 0;
+    top: 0;
+    background: #3989c9;
+    color: #fff;
+    padding: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    top: -3em;
+}
+
+/* Auto Popup */
+
+hr {
+    clear: both;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 0;
+    border-top: 1px solid #aaaaaa;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #428bca;
+    border: #357ebd solid 1px;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: color .1s ease;
+}
+
+.btn:hover {
+    background: #357ebd;
+}
+
+.btn.btn-big {
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+}
+
+.btn-close {
+    color: #aaaaaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.btn-close:hover {
+    color: #919191;
+}
+
+.modal:target:before {
+    display: none;
+}
+
+.modal:before {
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.modal .modal-dialog {
+    background: #fefefe;
+    border: #333333 solid 1px;
+    border-radius: 5px;
+    margin-left: -200px;
+    position: fixed;
+    left: 50%;
+    z-index: 11;
+    width: 360px;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    top: 20%;
+}
+
+.modal:target .modal-dialog {
+    top: -100%;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-header, .modal-footer {
+    padding: 10px 20px;
+}
+
+.modal-header {
+    border-bottom: #eeeeee solid 1px;
+}
+
+.modal-header h2 {
+    font-size: 20px;
+}
+
+.modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal .modal-dialog {
+        left: 55%;
+    }
+}

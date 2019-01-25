@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# webaction <web.dev.svb@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Show_External_Links 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-23 21:33+0200\n"
+"PO-Revision-Date: 2019-01-24 18:06+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Language: ru_RU\n"
+
+#: includes/add-plugin-menu.php:22
+msgid "Skip sites"
+msgstr "Исключить сайты"
+
+#: includes/add-plugin-menu.php:23
+msgid "For example:"
+msgstr "Пример:"
+
+#: includes/add-plugin-menu.php:29
+msgid "Submit"
+msgstr "Сохранить"
+
+#: includes/popup.php:16
+msgid "except for excluded sites"
+msgstr "кроме исключенных сайтов"
+
+#: includes/popup.php:22
+msgid "External links found!"
+msgstr "Найдены внешние ссылки!"
+
+#: includes/popup.php:26
+#, php-format
+msgid "On this page %s link"
+msgid_plural "There are %s links on this page"
+msgstr[0] "На этой странице %s ссылка"
+msgstr[1] "На этой странице %s ссылки"
+msgstr[2] "На этой странице %s ссылок"
+
+#: includes/popup.php:27
+msgid "If you do not see all the links on the page, check the source code."
+msgstr "Если вы не видите все ссылки на странице, проверьте исходный код."
+
+#: includes/popup.php:29
+msgid "Close"
+msgstr "Закрыть"
