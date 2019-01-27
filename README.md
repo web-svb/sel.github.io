@@ -49,10 +49,15 @@ Download the Show External Links plugin and uploading it to your server via your
 ## Screenshots ==
 
 1. Plugin menu page.
+
 ![menu-page-selinks](https://user-images.githubusercontent.com/47003509/51801355-22983900-2245-11e9-82cf-ba680d1d0c64.png)
+
 2. Information panel.
+
 ![information-panel-selinks](https://user-images.githubusercontent.com/47003509/51801354-22983900-2245-11e9-9693-41f02f8d2aba.png)
+
 3. View external links on the page.
+
 ![external-links-selinks](https://user-images.githubusercontent.com/47003509/51801353-22983900-2245-11e9-8c4e-3027ffd40b09.png)
 
 ## Changelog
