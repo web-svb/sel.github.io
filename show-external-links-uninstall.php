@@ -3,9 +3,7 @@
 /**
  * Fired when the plugin is uninstalled.
  *
- * @link       https://web-svb.github.io/sel.github.io
- * @since      1.0.1
- *
+ * @since      1.0.0
  * @package    Show_External_Links
  */
 

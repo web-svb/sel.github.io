@@ -44,16 +44,24 @@ Download the Show External Links plugin and uploading it to your server via your
 
 == Screenshots ==
 
-1. Plugin menu page
-2. The notification window on the page
-3. Found links on the page
+1. Plugin menu page.
+2. Information panel.
+3. View external links on the page.
 
 == Changelog ==
 
-= 1.0.1 (2019-01-25) =
+= 1.0.1 =
 
-- Fixed plugin styles
-- Added support for multisite
-- Links of the admin bar Wordpress are excluded.
+Release Date: January 27, 2019
+
+* Fixed plugin styles.
+* Added support for multisite.
+* Exclude any links from the admin panel.
+
+= 1.0.0 =
+
+Release Date: January 25, 2019
+
+* Initial release.
 
 == Upgrade Notice ==

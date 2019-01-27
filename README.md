@@ -8,7 +8,7 @@ Tested up to: 5.0.3
 
 Requires PHP: 5.6
 
-Stable tag: 1.0.1
+Stable tag: 1.0.0
 
 License: GPLv2 or later
 
@@ -50,7 +50,7 @@ Download the Show External Links plugin and uploading it to your server via your
 
 ## Changelog
 
-`1.0.1 (2019-01-25)`
+`1.0.0 (2019-01-25)`
 
 - Fixed plugin styles
 - Added support for WP Multisite

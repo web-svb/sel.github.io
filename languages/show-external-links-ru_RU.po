@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# webaction <web.dev.svb@gmail.com>, 2019.
+# web-svb <web.dev.svb@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Show_External_Links 1.0.1\n"
+"Project-Id-Version: Show_External_Links 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-23 21:33+0200\n"
-"PO-Revision-Date: 2019-01-24 18:06+0200\n"
+"PO-Revision-Date: 2019-01-27 11:58+0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,27 +18,43 @@ msgstr ""
 "Last-Translator: \n"
 "Language: ru_RU\n"
 
-#: includes/add-plugin-menu.php:22
+#: admin/partials/show-external-links-admin-form.php:14
+msgid "Show External Links Settings"
+msgstr "Настройки Show External Links"
+
+#: admin/partials/show-external-links-admin-form.php:15
 msgid "Skip sites"
 msgstr "Исключить сайты"
 
-#: includes/add-plugin-menu.php:23
-msgid "For example:"
-msgstr "Пример:"
+#: admin/partials/show-external-links-admin-form.php:17
+msgid "Domains or links, all from a new line."
+msgstr "Домены или ссылки, все с новой строки."
 
-#: includes/add-plugin-menu.php:29
+#: admin/partials/show-external-links-admin-form.php:17
+msgid "For example:"
+msgstr "Например:"
+
+#: admin/partials/show-external-links-admin-form.php:17
+msgid "or with parameters:"
+msgstr "или с параметрами:"
+
+#: admin/partials/show-external-links-admin-form.php:17
+msgid "URLs and parameters are truncated, only the domain remains."
+msgstr "URL-адреса и параметры обрезаются, остается только домен."
+
+#: admin/partials/show-external-links-admin-form.php:21
 msgid "Submit"
 msgstr "Сохранить"
 
-#: includes/popup.php:16
+#: public/partials/show-external-links-public-popup.php:12
 msgid "except for excluded sites"
 msgstr "кроме исключенных сайтов"
 
-#: includes/popup.php:22
+#: public/partials/show-external-links-public-popup.php:19
 msgid "External links found!"
 msgstr "Найдены внешние ссылки!"
 
-#: includes/popup.php:26
+#: public/partials/show-external-links-public-popup.php:25
 #, php-format
 msgid "On this page %s link"
 msgid_plural "There are %s links on this page"
@@ -46,10 +62,6 @@ msgstr[0] "На этой странице %s ссылка"
 msgstr[1] "На этой странице %s ссылки"
 msgstr[2] "На этой странице %s ссылок"
 
-#: includes/popup.php:27
+#: public/partials/show-external-links-public-popup.php:36
 msgid "If you do not see all the links on the page, check the source code."
 msgstr "Если вы не видите все ссылки на странице, проверьте исходный код."
-
-#: includes/popup.php:29
-msgid "Close"
-msgstr "Закрыть"
