@@ -46,7 +46,7 @@ In the search field type "Show External Links" and click Search Plugins. Once yo
 
 Download the Show External Links plugin and uploading it to your server via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](https://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
-## Screenshots ==
+## Screenshots
 
 1. Plugin menu page.
 
