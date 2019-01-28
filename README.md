@@ -26,11 +26,16 @@ If you do not see all the links on the page, check the source code. Perhaps, the
 
 The plugin does not take into account the WordPress admin bar and the links specified in the skip-sites field.
 
-## Current Features
+### Features
 
-- Information on the number of external links on the page
-- Highlight external links for easy visual detection
-- Exclude certain sites from checking
+* Information on the number of external links on the page
+* Highlight external links for easy visual detection
+* Exclude certain sites from checking
+
+### Bundled Translations
+
+* English
+* Russian
 
 ## Installation
 

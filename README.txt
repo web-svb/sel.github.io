@@ -21,10 +21,16 @@ The plugin does not take into account the WordPress admin bar and the links spec
 
 [Follow plugin development on Github.](https://web-svb.github.io/sel.github.io)
 
-= Current Features =
+= Features =
+
 - Information on the number of external links on the page
 - Highlight external links for easy visual detection
 - Exclude certain sites from checking
+
+= Bundled Translations =
+
+- English
+- Russian
 
 == Installation ==
 
